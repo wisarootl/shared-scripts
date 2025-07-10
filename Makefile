@@ -8,7 +8,7 @@ setup_dev:
 	pipx install pre-commit
 	pre-commit install
 
-	brew install shfmt shellcheck
+	brew install shfmt shellcheck prettier
 
 assert_setup_dev:
 	pre-commit run -a
@@ -16,3 +16,4 @@ assert_setup_dev:
 lint:
 	find . -type f -name "*.sh" -exec shfmt -w -i 6 {} +
 	find . -type f -name "*.sh" -exec shellcheck {} +
+	prettier --write "**/*.{json,yaml,yml,md}"

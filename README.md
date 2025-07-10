@@ -1,6 +1,6 @@
 # Shared Scripts
 
-Collection of development setup and utility scripts for macOS environments.
+Quick-share command line scripts for use in quick command runner like Makefile or Justfile.
 
 ## Quick Start
 
@@ -11,6 +11,19 @@ make assert_setup_dev  # Validate setup
 
 ## Requirements
 
--   macOS
--   Homebrew
--   Zsh shell
+- macOS
+- Homebrew
+- Zsh shell
+
+## Usage
+
+```bash
+git submodule add -b main https://github.com/wisarootl/shared-scripts.git scripts/shared
+```
+
+```Makefile
+setup_dev:
+	chmod +x scripts/shared/node/setup_dev.sh
+	./scripts/shared/node/setup_dev.sh
+	exec zsh
+```
