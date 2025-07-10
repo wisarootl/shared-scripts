@@ -1,4 +1,4 @@
-hi:
+setup_dev:
 	chmod +x common/update_brew.sh
 	./common/update_brew.sh
 
@@ -8,8 +8,10 @@ hi:
 	pipx install pre-commit
 	pre-commit install
 
-	brew install shfmt
-	brew install shellcheck
+	brew install shfmt shellcheck
+
+assert_setup_dev:
+	pre-commit run -a
 
 lint:
 	find . -type f -name "*.sh" -exec shfmt -w -i 6 {} +
