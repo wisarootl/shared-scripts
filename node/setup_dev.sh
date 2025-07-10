@@ -12,3 +12,6 @@ source "$(dirname "$0")/load_nvm.sh"
 
 nvm install --lts
 npm install
+
+brew install pre-commit
+pre-commit install

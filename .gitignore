@@ -1,5 +1,5 @@
-# Created by https://www.toptal.com/developers/gitignore/api/macos,windows,visualstudiocode,intellij+all,node,java,python,go,ssh,terragrunt,terraform
-# Edit at https://www.toptal.com/developers/gitignore?templates=macos,windows,visualstudiocode,intellij+all,node,java,python,go,ssh,terragrunt,terraform
+# Created by https://www.toptal.com/developers/gitignore/api/go,ssh,java,node,macos,python,windows,terraform,terragrunt,intellij+all,visualstudiocode
+# Edit at https://www.toptal.com/developers/gitignore?templates=go,ssh,java,node,macos,python,windows,terraform,terragrunt,intellij+all,visualstudiocode
 
 ### Go ###
 # If you prefer the allow list template instead of the deny list, see community template:
@@ -572,4 +572,4 @@ $RECYCLE.BIN/
 # Windows shortcuts
 *.lnk
 
-# End of https://www.toptal.com/developers/gitignore/api/macos,windows,visualstudiocode,intellij+all,node,java,python,go,ssh,terragrunt,terraform
+# End of https://www.toptal.com/developers/gitignore/api/go,ssh,java,node,macos,python,windows,terraform,terragrunt,intellij+all,visualstudiocode
