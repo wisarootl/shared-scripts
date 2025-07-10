@@ -1,0 +1,29 @@
+# Avialable hook https://pre-commit.com/hooks.html
+repos:
+    - repo: https://github.com/pre-commit/pre-commit-hooks
+      rev: v5.0.0
+      hooks:
+          - id: check-yaml
+          - id: check-json
+          - id: check-added-large-files
+          - id: end-of-file-fixer
+          - id: trailing-whitespace
+          - id: detect-aws-credentials
+            args: [--allow-missing-credentials]
+    - repo: https://github.com/compilerla/conventional-pre-commit
+      rev: v4.0.0
+      hooks:
+          - id: conventional-pre-commit
+            stages: [commit-msg]
+    - repo: https://github.com/gitleaks/gitleaks
+      rev: v8.24.0
+      hooks:
+          - id: gitleaks
+    - repo: local
+      hooks:
+          - id: make-lint
+            name: linting
+            entry: make lint
+            language: system
+            pass_filenames: false
+            types: [file]
