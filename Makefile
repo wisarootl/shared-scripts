@@ -14,10 +14,6 @@ setup_dev:
 assert_setup_dev:
 	pre-commit run -a
 
-ci:
-	chmod +x common/install_brew_packages.sh
-	./common/install_brew_packages.sh
-
 lint:
 	find . -type f -name "*.sh" -exec shfmt -w -i 6 {} +
 	find . -type f -name "*.sh" -exec shellcheck {} +
