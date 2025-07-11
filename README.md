@@ -1,12 +1,13 @@
 # Shared Scripts
 
-Quick-share command line scripts for use in quick command runner like Makefile or Justfile.
+This repository contains reusable shell scripts intended for use with quick command runners like Makefile or Justfile.
+It is designed to be added as a Git submodule in other projects.
 
 ## Quick Start
 
 ```bash
-make setup_dev    # Install all dependencies and setup development environment
-make assert_setup_dev  # Validate setup
+make setup_dev
+make assert_setup_dev
 ```
 
 ## Requirements
@@ -17,9 +18,13 @@ make assert_setup_dev  # Validate setup
 
 ## Usage
 
+- Add as Submodule
+
 ```bash
 git submodule add -b main https://github.com/wisarootl/shared-scripts.git scripts/shared
 ```
+
+- Example Makefile Usage
 
 ```Makefile
 setup_dev:
