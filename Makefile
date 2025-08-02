@@ -18,3 +18,11 @@ lint:
 	find . -type f -name "*.sh" -exec shfmt -w -i 6 {} +
 	find . -type f -name "*.sh" -exec shellcheck {} +
 	prettier --write "**/*.{json,yaml,yml,md}"
+
+rust_setup_dev:
+	chmod +x rust/setup_dev.sh
+	./rust/setup_dev.sh
+
+rust_assert_setup_dev:
+	chmod +x rust/assert_setup_dev.sh
+	./rust/assert_setup_dev.sh
