@@ -1,6 +1,6 @@
 #!/usr/bin/env bash
 
-set -exx
+set -ex
 
 pipx install poetry
 pipx ensurepath

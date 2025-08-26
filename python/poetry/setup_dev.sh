@@ -1,6 +1,6 @@
 #!/usr/bin/env bash
 
-set -exx
+set -ex
 
 while [[ $# -gt 0 ]]; do
       case $1 in
@@ -32,6 +32,9 @@ chmod +x "$(dirname "$0")/../clean_venv.sh"
 
 chmod +x "$(dirname "$0")/../../common/update_brew.sh"
 "$(dirname "$0")/../../common/update_brew.sh"
+
+# chmod +x "$(dirname "$0")/../../common/setup_gcloud.sh"
+# "$(dirname "$0")/../../common/setup_gcloud.sh"
 
 chmod +x "$(dirname "$0")/../setup_pyenv.sh"
 "$(dirname "$0")/../setup_pyenv.sh"
