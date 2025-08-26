@@ -1,6 +1,6 @@
 #!/usr/bin/env bash
 
-set -e
+set -ex
 
 if ! grep -q "# >>> nvm initialize >>>" ~/.zshrc; then
       if [ -s ~/.zshrc ] && [ "$(tail -c 1 ~/.zshrc | wc -l)" -eq 0 ]; then
