@@ -1,6 +1,6 @@
 #!/usr/bin/env bash
 
-set -e
+set -ex
 
 echo "Rust: $(which rustc)"
 echo "Cargo: $(which cargo)"

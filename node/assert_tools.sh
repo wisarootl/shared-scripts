@@ -1,6 +1,6 @@
 #!/usr/bin/env bash
 
-set -e
+set -ex
 
 echo "Node: $(which node)"
 echo "NPM: $(which npm)"
