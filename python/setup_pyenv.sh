@@ -1,6 +1,6 @@
 #!/usr/bin/env bash
 
-set -ex
+set -e
 
 brew install pyenv --quiet
 if [ ! -d "$(pyenv root)/plugins/pyenv-update" ]; then

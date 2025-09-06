@@ -1,6 +1,6 @@
 #!/usr/bin/env bash
 
-set -ex
+set -e
 
 chmod +x "$(dirname "$0")/setup_zshrc_nvm.sh"
 "$(dirname "$0")/setup_zshrc_nvm.sh"

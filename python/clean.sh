@@ -1,6 +1,6 @@
 #!/usr/bin/env bash
 
-set -ex
+set -e
 
 rm -rf .mypy_cache/
 rm -rf .ruff_cache/

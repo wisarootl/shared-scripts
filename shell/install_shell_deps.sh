@@ -1,6 +1,6 @@
 #!/usr/bin/env bash
 
-set -ex
+set -e
 
 if [[ "$OSTYPE" == "darwin"* ]]; then
       brew install shfmt shellcheck prettier
