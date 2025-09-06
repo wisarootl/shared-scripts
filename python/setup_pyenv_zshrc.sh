@@ -1,6 +1,6 @@
 #!/usr/bin/env bash
 
-set -ex
+set -e
 
 if ! grep -q "# >>> pyenv initialize >>>" ~/.zshrc; then
       if [ -s ~/.zshrc ] && [ "$(tail -c 1 ~/.zshrc | wc -l)" -eq 0 ]; then
